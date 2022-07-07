@@ -49,7 +49,7 @@ n = input("Type 'y' to roll the dice or 'n' to quit: ")
 
 if(n == 'y'):
 
-    x = random. randint(1,7)
+    x = random. randint(1,6)
 
     if(x == 1):
         dice1()
