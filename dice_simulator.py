@@ -43,26 +43,35 @@ def dice6():
     print("---------")
 
 
-print("Hello User")
+print("\nHello User\n")
 
 n = input("Type 'y' to roll the dice or 'n' to quit: ")
 
-if(n == 'y'):
+while(n != 'y' and n != 'n'):
+    print("Please enter the right letter\n")
+    n = input("Type 'y' to roll the dice or 'n' to quit: ")
+    while n == 'y':
 
-    x = random. randint(1,6)
+        x = random. randint(1,7)
+        print("\n")
+        if(x == 1):
+            dice1()
+        elif x == 2:
+            dice2()
+        elif x == 3:
+            dice3()
+        elif x == 4:
+            dice4()
+        elif x == 5:
+            dice5()
+        else:
+            dice6()
+        print("\n")
+        n = input("Wanna roll dice again, just type 'y': ")
+        print("\n")
 
-    if(x == 1):
-        dice1()
-    elif x == 2:
-        dice2()
-    elif x == 3:
-        dice3()
-    elif x == 4:
-        dice4()
-    elif x == 5:
-        dice5()
-    else:
-        dice6()
-
-if n == 'n':
-    print("Thanks for your time :)")
+    if n == 'n':
+        print("\nThanks for your time :)")
+        print("Have a good time :)")
+        print("\n")
+    
